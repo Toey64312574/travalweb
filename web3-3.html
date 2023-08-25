@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Shukhothai Travel </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial;
+          }
+          * a {
+            text-decoration: none;
+          }
+          * li {
+            list-style: none;
+          }
+          .container {
+            min-height: 120vh;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            position: relative;
+          }
+          /* ปรับแต่งสไตล์สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  /* เพิ่มสไตล์ที่คุณต้องการให้กับหน้าจอเล็ก ๆ ที่มีความกว้างไม่เกิน 768px */
+}
+
+/* ปรับแต่งสไตล์สำหรับหน้าจอขนาดกลางถึงใหญ่ */
+@media (min-width: 769px) {
+  /* เพิ่มสไตล์ที่คุณต้องการให้กับหน้าจอขนาดกลางถึงใหญ่ ที่มีความกว้างมากกว่า 768px */
+}
+
+          .navBar {
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: center;
+            height: 15vh;
+          }
+          .navBar ul {
+            display: flex;
+            align-items: center;
+          }
+          .navBar ul li {
+            padding: 0 25px;
+          }
+          .navBar ul li a {
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+          }
+          .navBar .logo a {
+            font-size: 2.3rem;
+            color: #fff;
+      
+          }
+            /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #fffbfb;
+  background-image: url('https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* URL ของรูปภาพที่คุณต้องการ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* รูปภาพจะปรากฏตลอดเวลา */
+}
+.header {
+  background-color: #0e0e0e; /* Dark brown */
+  color: #fff;
+  padding: 8px;
+  
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #d4ccc4; /* Light brown */
+  padding: 600px;
+  text-align: center;
+}
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+  
+
+}
+
+.image-container img {
+    
+        max-width: 100%;
+        height: auto;
+        max-height: 800px;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+  
+
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+/* Adjust footer color for better visibility */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.logo img {
+    width: 180px;
+    height: auto;
+    margin-top: 20px;
+}  
+h1 {
+    font-size: 2rem; /* ปรับขนาดตามต้องการ */
+    font-weight: bold; /* เอาข้อความเป็นตัวหนังสือปกติ */
+    color: #ffffff; /* เปลี่ยนสีตามต้องการ */
+    text-align: center; /* จัดกึ่งกลาง */
+    font-style: oblique ;
+  }
+ </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title> Shukhothai Travel </title>
+  </head>
+   <body>
+  <header class="header">
+  <div class="navBar">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+   <ul>
+                        <li><a href="web3.html">Home</a></li>
+                        <li><a href="web3-1.html">Travel</a></li>
+                        <li><a href="web3-2.html">Restaurant</a></li>
+                        <li><a href="web3-3.html">Map</a></li>
+                        <li><a href="web3-4.html">About</a></li>
+                      </header>
+                      <main class="content">
+                        <br><br>
+                        <h1>แผนที่ท่องเที่ยวจังหวัดสุโขทัย</h1><br><br>
+        <div class="image-container">
+          <img src="https://www.oceansmile.com/map/n/3125.gif" alt="Image 1">
+          
+      </div>
+  </main>
+<footer class="footer">
+  <p> *ขออนุญาติใช้รูปภาพเเละกล่าวถึงเว็บไซต์เพื่อนำไปใช้ในกรณีศึกษาเท่านั้น!!*</p>
+</footer>
+        
+</body>
+</html>

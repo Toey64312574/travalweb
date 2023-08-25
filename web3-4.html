@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial;
+          }
+          * a {
+            text-decoration: none;
+          }
+          * li {
+            list-style: none;
+            
+          }
+          .container {
+            min-height: 120vh;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            position: relative;
+          }
+          /* ปรับแต่งสไตล์สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  /* เพิ่มสไตล์ที่คุณต้องการให้กับหน้าจอเล็ก ๆ ที่มีความกว้างไม่เกิน 768px */
+}
+
+/* ปรับแต่งสไตล์สำหรับหน้าจอขนาดกลางถึงใหญ่ */
+@media (min-width: 769px) {
+  /* เพิ่มสไตล์ที่คุณต้องการให้กับหน้าจอขนาดกลางถึงใหญ่ ที่มีความกว้างมากกว่า 768px */
+}
+
+          .navBar {
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: center;
+            height: 15vh;
+          }
+          .navBar ul {
+            display: flex;
+            align-items: center;
+          }
+          .navBar ul li {
+            padding: 0 25px;
+          }
+          .navBar ul li a {
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+          }
+          .navBar .logo a {
+            font-size: 2.3rem;
+            color: #fff;
+      
+          }
+            /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #fffbfb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* รูปภาพจะปรากฏตลอดเวลา */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+  }
+.header {
+  background-color: #0e0e0e; /* Dark brown */
+  color: #fff;
+  padding: 8px;
+  
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #d4ccc4; /* Light brown */
+  padding: 600px;
+  text-align: center;
+}
+.image-container {
+    margin: 50px auto; /* ปรับค่า margin-top และ margin-bottom ตามที่คุณต้องการ */
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 50%;
+    margin-left: 450px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 15px; /* Adding border-radius for rounded corners */
+  width: 800px;
+ 
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 10px; /* Adjust border radius as needed */
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+.main-content {
+    flex: 1; /* ให้ส่วนเนื้อหาหยุดอยู่เหนือส่วน footer */
+}
+.footer {
+    background-color: #464242;
+    color: #fff5f5;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-left: 50px;
+    margin-bottom: 7px;
+
+}
+.logo img {
+    width: 180px; /* Adjust the logo width as needed */
+    height: auto;
+    margin-top: 20px; 
+  
+  
+
+} 
+h1 {
+  font-size: 2rem; /* ปรับขนาดตามต้องการ */
+  font-weight: 900; /* เอาข้อความเป็นตัวหนังสือปกติ */
+  color: #ffffff; /* เปลี่ยนสีตามต้องการ */
+  text-align: center; /* จัดกึ่งกลาง */
+  font-style: oblique ;
+} 
+ </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title> Shukhothai Travel </title>
+  </head>
+   <body>
+    <video autoplay loop muted id="background-video">
+        <source src="your-video.mp4" type="video/mp4"> <!-- เปลี่ยนเส้นทางไปยังวีดีโอที่คุณมี -->
+      </video>
+  <header class="header">
+  <div class="navBar">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+   <ul>
+                        <li><a href="web3.html">Home</a></li>
+                        <li><a href="web3-1.html">Travel</a></li>
+                        <li><a href="web3-2.html">Restaurant</a></li>
+                        <li><a href="web3-3.html">Map</a></li>
+                        <li><a href="web3-4.html">About</a></li>
+                      </header>
+<div class="image-container">
+          
+          <br><br><br><h2>ขออนุญาตและขอบคุณแหล่งที่มาของรูปภาพเเละเว็บไซต์</h2>
+          <p class="image-caption"> - Background และรูปสถานที่ท่องเที่ยวทั้งหมดจาก wix.com <br>
+                                    - รูปอุทยานประวัติศาสตร์สุโขทัย จาก pixabay.com<br>
+                                    - รูปก๋วยจาก เพจก๋วยเตี๋ยวชายทุ่ง เพจก๋วยเตี๋ยวสุโขทัยเจ๊แฮ เพจก๋วยเตี๋ยวสุโขทัยโป๊ะเป๊ะ <br>
+                                    - รูปสถานที่ท่องเที่ยวจาก wix.com <br>
+                                    - รูปแผนที่จาก oceansmile.com<br>
+                                    - รูปแบบเว็บไซต์หน้า Home จาก ZalaZchannel <br>
+                                    - เว็บไซต์ที่กล่าวถึง https://travel.trueid.net  https://www.wongnai.com https://www.paiduaykan.com https://www.chiangmaiexpert.com 
+                                    <br>
+                                </p>
+      </div>   
+  <footer class="footer">
+    <p>ชื่อ: นพนัดดา &emsp; ศักดิ์พลพงศ์ </p>
+    <p>สาขา: วิทยาการคอมพิวเตอร์</p>
+    <p>รหัสนิสิต: 64312574</p>
+    <p>มหาวิทยาลัย: มหาวิทยาลัยนเรศวร</p>
+   <p>E-mail: nopnaddas64@nu.ac.th</p>
+</footer>
+        
+</body>
+</html>
